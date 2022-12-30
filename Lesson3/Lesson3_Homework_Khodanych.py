@@ -1,16 +1,16 @@
 # Задача 1
 import random
 
-min = random.randint(1, 59)
+min = random.randint(0, 59)
 print(f"Рандомне число: {min}")
 
-if min > 0 and min < 15:
+if min >= 0 and min <= 15:
     print ("Це число потрапляє у першу чверть")
-elif min > 15 and min <30:
+elif min >= 15 and min <= 30:
     print("Це число потрапляє у другу чверть")
-elif min > 30 and min < 45:
+elif min >= 30 and min <= 45:
     print("Це число потрапляє у третю чверть")
-elif min > 45 and min < 60:
+elif min >= 45 and min <= 60:
     print("Це число потрапляє у четверту чверть")
 
 # Задача 2
@@ -25,12 +25,11 @@ elif birth_month == 3 or birth_month == 4 or birth_month == 5:
     print("Весна - Все довкола розцвітало.")
 elif birth_month == 6 or birth_month == 7 or birth_month == 8:
     print("Літо - Діти насолоджувались літніми канікулами.")
-elif birth_month == 9 or birth_month == 10 or birth_month == 11:
+else:
     print("Осінь - Все довкола загоралось яскравими фарбами.")
 
 # Задача 3
 
-import random
 
 number = random.randint(1, 10000)
 print(f"Рандомне число: {number}")
