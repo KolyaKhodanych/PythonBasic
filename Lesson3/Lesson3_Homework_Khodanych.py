@@ -55,5 +55,9 @@ elif x_point < 0 and y_point < 0:
     print("Точка знаходиться у третій чверті")
 elif x_point > 0 and y_point < 0:
     print("Точка знаходиться у четвертій чверті")
+elif x_point == 0 and y_point != 0:
+    print ("Точка знаходиться на осі Y")
+elif x_point != 0 and y_point == 0:
+    print ("Точка знаходиться на осі X")
 else:
     print("Це початок координат)")
